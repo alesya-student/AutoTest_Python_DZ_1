@@ -1,3 +1,3 @@
-def print_greeting ():
+def print_greeting():
     return "Привет, мир!"
-print  (print_greeting ())
+print(print_greeting ())
