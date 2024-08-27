@@ -2,7 +2,6 @@
 # прошу комментарий наставника)
 
 lst = [ 18, 14, 10, 6, 2 ]
-for i in range(18, -1):
-    lst(i)
 
+lst = list(range(18, 1, -4))
 print(lst)

@@ -1,5 +1,4 @@
-for month in range(1, 13):
-    month = ()
+month = int(input('Введите номер месяца: '))
 
 def month_to_season():
     if month in [12, 1, 2]:
