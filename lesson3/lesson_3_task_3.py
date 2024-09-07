@@ -7,6 +7,6 @@ from_address = Address(606000, 'Дзержинск', 'Головнина пр-т
 cost = 200
 track = "AP-55555"
 
-mailing = Mailing (to_address, from_address, cost, track)
+mailing = Mailing(to_address, from_address, cost, track)
 
 print(f'Отправление {track} из {to_address} в {from_address}. Стоимость {cost} рублей.')

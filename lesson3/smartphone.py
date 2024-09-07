@@ -5,3 +5,4 @@ class Smartphone:
         self.model = model
         self.number = number
         
+        
