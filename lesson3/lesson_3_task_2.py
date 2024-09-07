@@ -1,5 +1,6 @@
 from smartphone import Smartphone
 
+
 catalog = [
     Smartphone ("Samsung", "S23", "+79111111111"),
     Smartphone ("Samsung", "A52", "+79111111112"),
@@ -10,3 +11,4 @@ catalog = [
 
 for smartphone in catalog:
     print(f'{smartphone.make} - {smartphone.model}. {smartphone.number}')
+    

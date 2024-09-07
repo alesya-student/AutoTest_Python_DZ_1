@@ -4,3 +4,4 @@ class Smartphone:
         self.make = make
         self.model = model
         self.number = number
+        
