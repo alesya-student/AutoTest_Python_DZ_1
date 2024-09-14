@@ -3,7 +3,7 @@ from stringUtils import StringUtils
 
 
 # 1
-# @pytest.mark.test_positive
+@pytest.mark.test_positive
 @pytest.mark.parametrize('input_text, output_text', [
     ('привет', 'Привет'),
     ('Hello!', 'Hello!'),
