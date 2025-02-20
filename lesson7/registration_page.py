@@ -47,7 +47,7 @@ class Registration:
     def submit(self):
         self.driver.find_element(By.CSS_SELECTOR,
                                  ".btn.btn-outline-primary.mt-3").click()
-        
+
     def get_element_by_class(self, id):
         color = WebDriverWait(self.driver, 5).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, id))
@@ -61,5 +61,6 @@ class Registration:
 
     def test_green(self):
         green_fields = self.driver.find_elements(By.CSS_SELECTOR,
-                                                 'div.alert.py-2.alert-success')
+                                                 'div.alert.py-2.alert-success'
+                                                 )
         return len(green_fields)

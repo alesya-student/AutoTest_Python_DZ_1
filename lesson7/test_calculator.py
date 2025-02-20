@@ -12,6 +12,8 @@ from calculator_page import Calculator
 @pytest.fixture()
 def browser():
     browser = webdriver.Chrome()
+    browser.implicitly_wait(5)
+    browser.maximize_window()
     yield browser
     browser.quit()
 
@@ -21,12 +23,7 @@ def test_calculator():
                                                      install()))
     calculator_page = Calculator(browser)
     calculator_page.delay_value(45)
-    calculator_page.input_symbol(
-        symbol_1='//*[@id="calculator"]/div[2]/span[1]',
-        symbol_2='//*[@id="calculator"]/div[2]/span[4]',
-        symbol_3='//*[@id="calculator"]/div[2]/span[2]',
-        symbol_4='//*[@id="calculator"]/div[2]/span[15]'
-    )
+    calculator_page.click_buttons(["7", "+", "8", "="])
     WebDriverWait(browser, 46).until(
         EC.text_to_be_present_in_element(
             (By.CSS_SELECTOR, 'div.screen'), '15'))
