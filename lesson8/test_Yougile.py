@@ -53,7 +53,7 @@ def test_create_project_len():
     full_len_projects_data = full_len_projects.json().get("content", [])
     assert full_len_projects.status_code == 200
 # сравнить первый и второй списки
-    assert len_projects_data < full_len_projects_data
+    assert len(len_projects_data) < len(full_len_projects_data)
 
 
 #  Тест. Создание проекта.
