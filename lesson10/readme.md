@@ -1,4 +1,3 @@
-# AutoTest_Python_DZ_10 ALLURE
 Написаны следующие автотесты:
 1. Автотест на калькулятор. Файл test_calculator_by_lesson10.py
 2. Автотетст на форму регистрации. Файл test_registration_by_lesson10.py
